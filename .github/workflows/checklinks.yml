@@ -21,10 +21,12 @@ jobs:
         uses: gaurav-nelson/github-action-markdown-link-check@v1
         with:
           use-quiet-mode: 'yes'
-          config-file: .github/workflows/checklinks_config.json
+          max-depth: 3
           # By default the github-action-markdown-link-check action checks for all markdown files in your repository. 
-          # Use this option to limit checks to only specific folders. 
+          # Use the 'folder-path' option to limit checks to only specific folders. 
           # Use comma separated values for checking multiple folders.
           folder-path: 001-IntroToKubernetes
+          # The config-file will need to be modified as additional challenges are added
+          config-file: .github/workflows/checklinks_config.json
 
                
