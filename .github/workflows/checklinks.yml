@@ -3,6 +3,12 @@ name: Check Markdown Links
 on:
   workflow_dispatch:
   push:
+<<<<<<< HEAD
+=======
+    paths:
+      - '.github/workflows/checklinks.yml'
+      - '001-IntroToKubernetes/**'
+>>>>>>> 7e2d543ddd6dc39eaa1d1259a8c673bc759bbf90
   
 jobs:
 
